@@ -16,4 +16,4 @@ def github_api():
         return jsonify(process_request(payload)), 200
 
 if __name__ == '__main__':
-    app.run()
+    app.run(threaded=True, host='0.0.0.0')
